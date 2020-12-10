@@ -1,0 +1,261 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(204, 201, 201);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* background-color: red; */
+
+}
+
+.logo {
+
+    width: 100px;
+    height: auto;
+    align-self: center;
+}
+
+.banner {
+    max-width: 350px;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+nav li {
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: rgb(199, 196, 196);
+}
+
+/* Servicios */
+
+h2 {
+
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(212, 212, 212);
+}
+
+.servicios {
+    /* background-color: blue; */
+    padding-bottom: 5rem;
+
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.img_servicio {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    /* border-radius: 50%; */
+    padding: 0.5rem;
+}
+
+
+.servicio_button {
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    background-color: grey;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+.pservicio {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+/* Proyectos */
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    justify-content: center;
+    align-content: center;
+    /* background-color: pink; */
+}
+
+.proyecto {
+    align-self: center;
+    background-color: rgb(216, 213, 213);
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.title_proyecto {
+
+    align-self: center;
+    padding-left: 2rem;
+}
+
+.img_proyecto {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.pproyecto {
+    text-align: center;
+    padding-top: 1rem;
+    width: 250px;
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flogo {
+
+    width: 100px;
+    height: auto;
+    align-self: center;
+}
+
+.slogan {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container_rrss {
+    padding: 2rem;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+    background: #5a5a5c;
+    color: white;
+}
+
+
+.fa-twitter {
+    background: #5a5a5c;
+    color: white;
+}
+
+.fa-instagram {
+    background: #5a5a5c;
+    color: white;
+}
+
+@media (min-width: 768px) {
+
+    .proyectos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex {
+        min-height: 350px;
+        padding: 1rem;
+    }
+
+    .container_rrss {
+        max-width: 400px;
+    }
+
+
+}
+
+@media (min-width: 1280px) {
+
+    .proyectos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex {
+        min-height: 350px;
+        padding: 1rem;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+
+    .slogan {
+        width: 400px;
+    }
+
+    .flogo {
+        width: 100px;
+        padding-right: 9rem;
+        height: auto;
+        align-self: center;
+    }
+
+    .container_rrss {
+        max-width: 400px;
+        order: 3;
+    }
+
+
+}
