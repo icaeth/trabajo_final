@@ -198,7 +198,8 @@ h2:after {
 .title_proyecto {
 
     align-self: center;
-    padding-left: 2rem;
+    /* eliminado este padding */
+    /* padding-left: 2rem;  */
 }
 
 .img_proyecto {
@@ -210,7 +211,8 @@ h2:after {
 
 .pproyecto {
     text-align: center;
-    padding-top: 1rem;
+    /* eliminado este padding */
+    /* padding-top: 1rem; */
     width: 250px;
 }
 
@@ -355,41 +357,42 @@ footer {
 }
 
 @media (min-width: 1024px) {
-    .proyectos {
+
+    /*     .proyectos {
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
-    .proyecto {
+ */
+    /*     .proyecto {
         display: flex;
         flex-wrap: wrap;
         width: 18%;
-    }
-    
-    .flex {
+    } */
+
+    /*     .flex {
         padding: 1rem;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
+    } */
 
-    .img_proyecto {
+    /*   .img_proyecto {
         width: 100px;
         align-items: center;
     }
-
-    .title_proyecto {
+ */
+    /*    .title_proyecto {
         flex-wrap: wrap;
-    }
+    } */
 
-    .pproyecto {
+    /*  .pproyecto {
         width: 90%;
         text-align: justify;
-        font-size: 10px
+         font-size: 10px
     }
-
+ */
 
 
     footer {
