@@ -315,6 +315,7 @@ footer {
     }
 
     .proyectos {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -351,4 +352,67 @@ footer {
     }
 
 
+}
+
+@media (min-width: 1024px) {
+    .proyectos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .proyecto {
+        display: flex;
+        flex-wrap: wrap;
+        width: 18%;
+    }
+    
+    .flex {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .img_proyecto {
+        width: 100px;
+        align-items: center;
+    }
+
+    .title_proyecto {
+        flex-wrap: wrap;
+    }
+
+    .pproyecto {
+        width: 90%;
+        text-align: justify;
+        font-size: 10px
+    }
+
+
+
+    footer {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        margin: 0 auto;
+        align-items: center;
+
+    }
+
+    .slogan {
+        width: 400px;
+    }
+
+    .flogo {
+        width: 100px;
+        height: auto;
+        order: 3
+    }
+
+    .container_rrss {
+        max-width: 400px;
+        order: 3;
+    }
 }
