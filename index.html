@@ -10,7 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Trabajo final</title>
+    <title>Trabajo Final</title>
+
 </head>
 
 <body>
@@ -19,13 +20,13 @@
         <img src="logo.png" alt="" class="logo">
         <img src="banner2.png" alt="" class="banner">
         <nav>
-            <li>Servicios</li>
-            <li>Proyectos</li>
-            <li>Contacto</li>
+            <li> <a href="#servicios"> Servicios </a></li>
+            <li> <a href="#proyectos"> Proyectos </a></li>
+            <li> <a href="mailto:barney@stinson.com"> Contacto </a></li>
         </nav>
     </header>
 
-    <div class="title_section">
+    <div id="servicios" class="title_section">
         <h2>Nuestros Servicios</h2>
     </div>
     <section class="servicios">
@@ -35,31 +36,35 @@
             <p class="pservicio">Le entregamos el vestuario de uno de los miembros de la banda Cheap Trick, 5 clases de
                 canto y además hacemos que un grupo de groupies lo acose antes de intentar enganchar con una chica en el
                 bar.</p>
-            <button class="servicio_button">Bajar Folleto <span></span>
-                <span></span>
-                <span></span>
-                <span></span></button>
+            <button onclick="location.href='https://www.youtube.com/watch?v=Nx3SX3R-E6w';" class="servicio_button">Bajar
+                Folleto
+            </button>
         </div>
+
         <div class="servicio">
             <h3 class="title">The Lorenzo von Matterhorn</h3>
             <img src="lorenzo.jpg" alt="" class="img_servicio">
             <p class="pservicio">Creamos una personalidad completa para usted en el cyberespacio, haciéndolo pasar por
                 un
                 millonario filántropo amante de los cachorros.</p>
-            <button class="servicio_button">Ir al sitio</button>
+            <button onclick="location.href='https://www.youtube.com/watch?v=0MC55lU_L2E';" class="servicio_button">Ir al
+                sitio</button>
         </div>
+
         <div class="servicio">
             <h3 class="title">The "He's Not Coming"</h3>
             <img src="not coming.jpg" alt="" class="img_servicio">
             <p class="pservicio">Identificamos lugares de reencuentro de enamorados, acordonamos el area para que no
                 lleguen otros y entonces usted va y le dice a uno "no va a venir"</p>
-            <button class="servicio_button">Contáctanos</button>
+            <button onclick="location.href='https://www.youtube.com/watch?v=KX3VmiRTvPM';"
+                class="servicio_button">Contáctanos</button>
         </div>
+
     </section>
 
 
-    <div class="title_section">
-        <h2>Clientes Satisfechos</h2>
+    <div id="proyectos" class="title_section">
+        <h2>Proyectos Exitosos</h2>
     </div>
     <section class="proyectos">
 
@@ -104,11 +109,11 @@
     <footer>
         <img src="logo.png" alt="" class="flogo">
         <div class="container_rrss">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/ibarneystinson" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/MrBarneyStynson" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/barneystinsonunofficial/" class="fa fa-instagram"></a>
         </div>
-        <p class="slogan">Copyright © 2020 Cristian Iriarte <br> All Rights Reserved</p>
+        <p class="slogan">Copyright © 2020 Cristian & David <br> All Rights Reserved</p>
 
     </footer>
 
