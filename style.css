@@ -15,7 +15,10 @@ header {
     flex-direction: column;
     align-content: center;
     /* background-color: red; */
+}
 
+header nav li a {
+    color: black;
 }
 
 .logo {
@@ -53,8 +56,36 @@ h2 {
     background-color: rgb(212, 212, 212);
 }
 
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+
+h2:before,
+h2:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
 .servicios {
     /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
     padding-bottom: 5rem;
 
 }
@@ -91,6 +122,15 @@ h2 {
     border-radius: 12px;
 }
 
+.servicio_button:hover {
+
+    background-color: rgb(77, 77, 77);
+
+}
+
+
+
+
 .pservicio {
     font-size: 1.2rem;
     padding: 1rem;
@@ -101,6 +141,7 @@ h2 {
 
 .proyectos {
     display: flex;
+    width: 100%;
     flex-direction: column;
     padding-top: 1rem;
     padding-bottom: 6rem;
@@ -111,15 +152,48 @@ h2 {
 
 .proyecto {
     align-self: center;
-    background-color: rgb(216, 213, 213);
-
+    margin: 2rem;
 }
 
 .flex {
     display: flex;
     flex-direction: column;
+    background-color: rgb(216, 213, 213);
     padding: 2rem;
+    box-shadow: 2px 2px 5px rgb(194, 192, 192),
+        -3px -3px 6px rgb(102, 101, 101);
+    border-radius: 10px;
 }
+
+.flex:hover {
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+}
+
 
 .title_proyecto {
 
@@ -206,11 +280,12 @@ footer {
     .proyectos {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .flex {
         min-height: 350px;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .container_rrss {
@@ -222,9 +297,27 @@ footer {
 
 @media (min-width: 1280px) {
 
+    nav {
+        width: 700px;
+        align-self: center;
+    }
+
+    .servicios {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .servicio {
+        max-width: 400px;
+        min-height: 500px;
+        justify-content: space-evenly;
+    }
+
     .proyectos {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .flex {
